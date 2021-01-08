@@ -46,7 +46,7 @@ conda activate gromacs-tutorials
 
 Install miniconda for Python 3 by following https://docs.conda.io/en/latest/miniconda.html#macosx-installers 
 
-Once you have conda installed, make an environment for the GROMACS tutorials with:
+Once you have conda installed, make an environment for the GROMACS tutorials with (note that 2019.1 is the highest available version for MacOS):
 
 ```bash
 conda create --name gromacs-tutorials -c conda-forge -c bioconda gromacs=2019.1 matplotlib nglview notebook numpy requests pandas seaborn
