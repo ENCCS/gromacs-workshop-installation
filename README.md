@@ -3,7 +3,7 @@
 This page contains software installation instructions for Gromacs workshops. When relevant, separate instructions are given for Windows, MacOS and Linux systems.
 
 - For the tutorials on umbrella-sampling ("pulling") simulations and applied-weight histogram methods ("AWH"), you will only need a non-MPI version of GROMACS along with Python3 and some packages. We suggest that you install these using the conda package manager. 
-- We will also be using VMD and Xmgrace (a.k.a. Grace)
+- We will also be using Xmgrace (a.k.a. Grace) and optionally VMD.
 - The replica-exchange molecular dynamics tutorial requires an MPI version of GROMACS to run production simulations, but you are not strictly required to install it since the tutorial will be about learning the concepts. You can however find general installation instructions for MPI-GROMACS below. 
 - For the tutorial "Computing trajectories efficiently on GPUs" we will use an external cluster and instructions will be provided during the workshop.
 - After you have gone through the installation steps below, please download the [tutorial Jupyter notebook](tutorial.ipynb) by cloning this repository (`git clone https://github.com/ENCCS/gromacs-workshop-installation.git`), run the notebook from terminal with `jupyter-notebook tutorial.ipynb`, and execute all cells in the notebook to make sure if you have everything installed correctly.
@@ -58,10 +58,10 @@ And activate it by:
 conda activate gromacs-tutorials
 ```
 
-## VMD
+## (Optional) VMD
 
-The "applied-weight histogram methods" tutorial relies on VMD, so please visit
-https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD to register, download and install ahead of time.
+VMD is a powerful molecular visualization package, but it is not required for the GROMACS tutorials since `nglview` can be used instead. If you nonetheless want to install VMD, please visit
+https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD to register, download and install.
 
 ## Xmgrace
 
