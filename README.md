@@ -58,7 +58,7 @@ conda activate gromacs-tutorials
 
 ## VMD
 
-Thursday’s workshop will be using VMD, so please visit
+The "applied-weight histogram methods" tutorial relies on VMD, so please visit
 https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=VMD to register, download and install ahead of time.
 
 ## Xmgrace
