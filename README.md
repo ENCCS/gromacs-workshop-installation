@@ -6,6 +6,8 @@ This page contains software installation instructions for Gromacs workshops. Whe
 - We will also be using VMD and Xmgrace (a.k.a. Grace)
 - The replica-exchange molecular dynamics tutorial requires an MPI version of GROMACS to run production simulations, but you are not strictly required to install it since the tutorial will be about learning the concepts. You can however find general installation instructions for MPI-GROMACS below. 
 - For the tutorial "Computing trajectories efficiently on GPUs" we will use an external cluster and instructions will be provided during the workshop.
+- After you have gone through the installation steps below, please download the [tutorial Jupyter notebook](tutorial.ipynb) by cloning this repository (`git clone https://github.com/ENCCS/gromacs-workshop-installation.git`), run the notebook from terminal with `jupyter-notebook tutorial.ipynb`, and execute all cells in the notebook to make sure if you have everything installed correctly.
+
 
 ## GROMACS and Python packages
 
