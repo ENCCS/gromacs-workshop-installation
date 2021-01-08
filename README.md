@@ -75,7 +75,7 @@ On MacOS, follow these instructions: http://www.phy.ohio.edu/~hadizade/blog_file
 
 ## (Optional) MPI-enabled GROMACS
 
-Replica-exchange MD simulations, taught in the Wednesday tutorial, requires MPI-based GROMACS. Since we will not be running production MD simulations during the tutorial it is not necessary to install an MPI version, and we will be providing reference output files for non-MPI GROMACS as a backup. 
+The tutorial on replica-exchange MD simulations requires MPI-based GROMACS. Since we will not be running production MD simulations during the tutorial it is not necessary to install an MPI version, and we will be providing reference output files for non-MPI GROMACS as a backup. 
 However, if you want to install MPI-based GROMACS on your own computer we provide here a general installation based on conda which should work on MacOS, Linux and WSL under Windows. If you already have compilers and an MPI library installed on your computer, you can skip the first section below or refer to the official installation instructions (https://manual.gromacs.org/documentation/current/install-guide/index.html). 
 
 Install compilers, OpenMPI and CMake:
