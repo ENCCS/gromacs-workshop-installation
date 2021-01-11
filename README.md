@@ -11,7 +11,8 @@ This page contains software installation instructions for Gromacs workshops. Whe
 - After you have gone through the installation steps below, please download the [tutorial Jupyter notebook](tutorial.ipynb), run the notebook from terminal with `jupyter-notebook tutorial.ipynb`, and execute all cells in the notebook to make sure you have everything installed correctly.
 To download the notebook, visit [this page](https://raw.githubusercontent.com/ENCCS/gromacs-workshop-installation/main/tutorial.ipynb) and save it to your hard drive by right-clicking the page and saving it as "tutorial.ipynb". 
 
-<p class="callout info">In the "Running via Binder" section below you will additionally find information on running GROMACS (including an MPI version) in the cloud without any local installation.</p>
+> In the "Running via Binder" section below you will additionally find information on running GROMACS 
+> (including an MPI version) in the cloud without any local installation.
 
 
 ## GROMACS and Python packages
