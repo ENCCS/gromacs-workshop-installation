@@ -81,7 +81,7 @@ On MacOS, follow these instructions: http://www.phy.ohio.edu/~hadizade/blog_file
 The tutorial on replica-exchange MD simulations requires MPI-based GROMACS. Since we will not be running production MD simulations during the tutorial it is not necessary to install an MPI version, and we will be providing reference output files for non-MPI GROMACS as a backup. 
 However, if you want to install MPI-based GROMACS on your own computer we provide here a general installation based on conda which should work on MacOS, Linux and WSL under Windows. If you already have compilers and an MPI library installed on your computer, you can skip the first section below or refer to the official installation instructions (https://manual.gromacs.org/documentation/current/install-guide/index.html). 
 
-Install compilers, OpenMPI and CMake:
+#### Install compilers, OpenMPI and CMake
 
 ```bash
 conda create --name mpi
@@ -91,7 +91,7 @@ conda install -c conda-forge openmpi
 conda install -c conda-forge cmake
 ```
 
-Download GROMACS 2020.4:
+#### Download GROMACS 2020.4
 
 ```bash
 wget http://ftp.gromacs.org/pub/gromacs/gromacs-2020.4.tar.gz 
@@ -99,7 +99,7 @@ cd gromacs-2020.4
 (or git clone https://gitlab.com/gromacs/gromacs.git; cd gromacs; git checkout v2020.4)
 ```
 
-Compile GROMACS:
+#### Compile GROMACS
 
 ```bash
 mkdir build
