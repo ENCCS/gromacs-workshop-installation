@@ -128,7 +128,7 @@ This will initiate a cloud instance which installs all the dependencies listed i
 file browser. You can then create new Jupyter notebooks by clicking "New" on the right side and selecting "Python 3". You will have 
 access to a `gmx` executable inside your notebooks.
 
-You can also compile an MPI version of GROMACS by following these steps:
+You can also compile an MPI version of GROMACS by following these steps in a terminal (click "New" and select "Terminal"):
 
 ```bash
 cd $HOME
