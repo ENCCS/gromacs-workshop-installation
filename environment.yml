@@ -4,7 +4,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - gromacs=2020.4
+  - gromacs
   - matplotlib
   - nglview
   - notebook
