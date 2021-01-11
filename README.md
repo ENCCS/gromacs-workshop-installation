@@ -105,6 +105,7 @@ cd gromacs-2020.4
 mkdir build
 cd build
 cmake .. -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx   -DGMX_MPI=ON -DGMX_DOUBLE=OFF  -DGMX_BUILD_OWN_FFTW=ON -DREGRESSIONTEST_DOWNLOAD=ON
+make
 make check
 sudo make install
 source /usr/local/gromacs/bin/GMXRC
