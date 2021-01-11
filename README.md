@@ -1,3 +1,5 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ENCCS/gromacs-workshop-installation/HEAD)
+
 # Gromacs workshop installation instructions
 
 This page contains software installation instructions for Gromacs workshops. When relevant, separate instructions are given for Windows, MacOS and Linux systems.
