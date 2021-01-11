@@ -11,6 +11,8 @@ This page contains software installation instructions for Gromacs workshops. Whe
 - After you have gone through the installation steps below, please download the [tutorial Jupyter notebook](tutorial.ipynb), run the notebook from terminal with `jupyter-notebook tutorial.ipynb`, and execute all cells in the notebook to make sure you have everything installed correctly.
 To download the notebook, visit [this page](https://raw.githubusercontent.com/ENCCS/gromacs-workshop-installation/main/tutorial.ipynb) and save it to your hard drive by right-clicking the page and saving it as "tutorial.ipynb". 
 
+<p class="callout info">In the "Running via Binder" section below you will additionally find information on running GROMACS (including an MPI version) in the cloud without any local installation.</p>
+
 
 ## GROMACS and Python packages
 
@@ -114,4 +116,34 @@ source /usr/local/gromacs/bin/GMXRC
 ```
 
 You will now hopefully be able to run gmx_mpi!
+
+## Running via Binder
+
+As a last resort, if you do not manage to install GROMACS or some of the required dependencies on your local machine, 
+you can run GROMACS (including an MPI version) in the cloud via [Binder](https://mybinder.org/).
+
+The first step is to launch this repository on Binder by clicking the "launch binder" button at the top of this README file.
+This will initiate a cloud instance which installs all the dependencies listed in `environment.yml` and start a Jupyter notebook 
+file browser. You can then create new Jupyter notebooks by clicking "New" on the right side and selecting "Python 3". You will have 
+access to a `gmx` executable inside your notebooks.
+
+You can also compile an MPI version of GROMACS by following these steps:
+
+```bash
+cd $HOME
+wget http://ftp.gromacs.org/pub/gromacs/gromacs-2020.4.tar.gz
+tar zxf gromacs-2020.4.tar.gz
+cd gromacs-2020.4
+mkdir build
+cd build
+cmake .. -DCMAKE_C_COMPILER=mpicc -DCMAKE_CXX_COMPILER=mpicxx   -DGMX_MPI=ON -DGMX_DOUBLE=OFF  -DGMX_FFT_LIBRARY=fftpack
+make
+```
+
+This procedure will install `gmx_mpi` into `/home/jovyan/gromacs-2020.4/build/bin` which you can use for MPI-enabled simulations.
+
+
+
+
+
 
